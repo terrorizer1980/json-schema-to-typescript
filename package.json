@@ -1,6 +1,6 @@
 {
-  "name": "json-schema-to-typescript",
-  "version": "9.1.1",
+  "name": "@tinyspeck/json-schema-to-typescript",
+  "version": "1.0.0",
   "description": "compile json schema to typescript typings",
   "main": "dist/src/index.js",
   "bin": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bcherny/json-schema-to-typescript.git"
+    "url": "git+https://github.com/slackhq/json-schema-to-typescript.git"
   },
   "keywords": [
     "json",
@@ -39,12 +39,12 @@
     "typing",
     "share"
   ],
-  "author": "Boris Cherny <boris@performancejs.com> (http://performancejs.com/)",
+  "author": "Yoav Sion (Originally Boris Cherny <boris@performancejs.com> (http://performancejs.com/))",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bcherny/json-schema-to-typescript/issues"
+    "url": "https://github.com/slackhq/json-schema-to-typescript/issues"
   },
-  "homepage": "https://github.com/bcherny/json-schema-to-typescript#readme",
+  "homepage": "https://github.com/slackhq/json-schema-to-typescript#readme",
   "dependencies": {
     "@types/json-schema": "^7.0.4",
     "cli-color": "^2.0.0",
