@@ -343,7 +343,7 @@ function generateStandaloneEnumAndType(ast: TEnum, options: Options): string {
   return (
     (hasComment(ast) ? generateComment(ast.comment) + '\n' : '') +
     `export const ${toSafeString(ast.standaloneName)} = {
-    ${ast.params.map(({ast, keyName}) => keyName + ' = ' + generateType(ast, options)).join(',\n')}
+    ${ast.params.map(({ast, keyName}) => keyName + ': ' + generateType(ast, options)).join(',\n')}
 } as const;
 export type ${toSafeString(ast.standaloneName)} = typeof ${toSafeString(
       ast.standaloneName
