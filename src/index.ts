@@ -45,6 +45,12 @@ export interface Options {
    */
   ignoreMinAndMaxItems: boolean
   /**
+   * Ignore maxItems for `array` types.
+   *
+   * Retains the benefit of minItems, commonly used to enforce non-empty arrays, without the risk of generating massive tuple unions for large values of maxItems.
+   */
+  ignoreMaxItems: boolean
+  /**
    * Append all index signatures with `| undefined` so that they are strictly typed.
    *
    * This is required to be compatible with `strictNullChecks`.
@@ -82,6 +88,7 @@ export const DEFAULT_OPTIONS: Options = {
   enableEnumTypes: false,
   format: true,
   ignoreMinAndMaxItems: false,
+  ignoreMaxItems: false,
   strictIndexSignatures: false,
   style: {
     bracketSpacing: false,

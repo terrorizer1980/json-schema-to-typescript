@@ -63,10 +63,12 @@ rules.set('Escape closing JSDoc Comment', schema => {
 })
 
 rules.set('Optionally remove maxItems and minItems', (schema, _rootSchema, _fileName, options) => {
-  if (options.ignoreMinAndMaxItems) {
+  if (options.ignoreMinAndMaxItems || options.ignoreMaxItems) {
     if ('maxItems' in schema) {
       delete schema.maxItems
     }
+  }
+  if (options.ignoreMinAndMaxItems) {
     if ('minItems' in schema) {
       delete schema.minItems
     }
