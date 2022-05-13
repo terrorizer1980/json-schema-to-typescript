@@ -47,7 +47,7 @@
   "homepage": "https://github.com/slackhq/json-schema-to-typescript#readme",
   "dependencies": {
     "@types/json-schema": "^7.0.4",
-    "cli-color": "^2.0.0",
+    "cli-color": "^2.0.1",
     "glob": "^7.1.6",
     "glob-promise": "^3.4.0",
     "is-glob": "^4.0.1",
